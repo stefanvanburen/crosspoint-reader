@@ -90,6 +90,13 @@ if (parsedSize != fileSize) {
 
 ## `section.bin`
 
+### Version 74
+
+Version 74 keeps the binary layout and rebuilds completed and partial sections.
+SD-font layout now measures words with the kerning that drawing applies, for
+fonts whose non-zero kern class cells fit in 16 KB per style. Cached line
+breaks and word positions change. Book metadata and saved progress are kept.
+
 ### Version 73
 
 Version 73 keeps the binary layout and rebuilds completed and partial sections.
